@@ -1,0 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/library_bg.jpg');
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+h1 { color: #0056b3; }

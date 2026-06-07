@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/notifications.css') }}">
+    <script src="{{ url_for('static', filename='js/notifications.js') }}"></script>
+</head>
+<body>
+    <h1>Library Notifications</h1>
+    <ul id="notificationsList">
+        {% for note in notifications %}
+            <li>{{ note }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

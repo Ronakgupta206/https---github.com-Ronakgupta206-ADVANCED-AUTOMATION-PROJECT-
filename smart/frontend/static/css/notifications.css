@@ -1,0 +1,7 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+h1 { color: #d9534f; }
+ul { list-style-type: square; }
+li { margin: 10px 0; }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Issue/Return Books</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Issue / Return Book</h1>
+
+    <h2>Issue Book</h2>
+<form method="POST" action="{{ url_for('students.book_issue') }}">
+
+    <input type="number" name="student_id" placeholder="Student ID" required>
+
+    <input type="text" name="book_name" placeholder="Book Name" required>
+
+    <button type="submit">Issue</button>
+
+</form>
+
+   <h2>Return Book</h2>
+<form method="POST" action="{{ url_for('students.book_return') }}">
+
+    <input type="number" name="student_id" placeholder="Student ID" required>
+
+    <input type="text" name="book_name" placeholder="Book Name" required>
+
+    <button type="submit">Return</button>
+
+</form>
+
+</body>
+</html>

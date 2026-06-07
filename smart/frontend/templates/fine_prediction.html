@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fine Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/fine_predict.js') }}"></script>
+</head>
+<body>
+    <h1>Predict Fine for Late Books</h1>
+    <form id="fineForm" method="POST" action="{{ url_for('prediction.predict_fine') }}">
+        <input type="number" name="days_late" placeholder="Days Late" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if fine is defined %}
+        <h2>Estimated Fine: ₹{{ fine }}</h2>
+    {% endif %}
+</body>
+</html>
